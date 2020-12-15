@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+            
+            body {
+                background-color: tan;
+                position: relative;
+                
+            }
+            .container {
+                position: relative;
+                background-color: brown;
+                width: 500px;
+                height: 500px;
+                border: 1px solid black;
+                margin: auto;
+                margin-top: 100px;
+                border-radius: 20px;
+                box-shadow: 0px 0px 0px 10px grey;
+        
+            }
+            .child {
+                position: absolute;
+                width: 400px;
+                height: 400px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: grey;
+                border: 1px solid black;
+                text-align: center;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 0px 5px grey;
+                
+            }
+            .header {
+                background-color: grey;
+                height: 50px;
+                border: 1px solid brown;
+                width: 50%;
+                padding-bottom: 25px;
+                text-align: center;
+                border-radius: 5px;
+                box-shadow: 0px 0px 0px 2px brown;
+                margin: auto;
+                
+                
+                
+            }
+            button {
+                margin-top: 75px;
+                font-size: 1.25em;
+                border-radius: 5px;
+                box-shadow: 0px 0px 0px 2px black;
+                color: brown;
+                background-color: tan;
+            }
+            p {
+                color: black;
+                font-family: sans-serif;
+                
+                margin-top: 50px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <header class="header">
+            <h1>Random Quote Generator</h1>
+
+        </header>
+        <div class="container">
+            <div class="child">
+                <button class="button" type="button">Change Quote</button>
+                <p class="quotes"></p>
+
+            </div>
+        </div>
+        <script src="randomQuote.js"></script>
+    </body>
+</html>
